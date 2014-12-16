@@ -23,7 +23,7 @@ public class IndexPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             kk = IndexTrainFragment.newInstance("1","test1");
         } else if (position == 1) {
-            kk = IndexTrainFragment.newInstance("2","test2");
+            kk = IndexSummaryFragment.newInstance("2","test2");
         }
         return kk;
     }

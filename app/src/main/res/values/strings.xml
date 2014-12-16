@@ -5,6 +5,7 @@
     <string name="drawer_open">Menu opened</string>
     <string name="drawer_close">Menu closed</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="index_train_fragment">Index Train fragment</string>
+    <string name="index_summary_fragment">Index Summary fragment</string>
 
 </resources>
