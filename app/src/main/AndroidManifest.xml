@@ -16,6 +16,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".statistic.StatisticActivity"
+            android:label="@string/title_activity_statistic" >
+        </activity>
+        <activity
+            android:name=".training_program.TrainingProgramActivity"
+            android:label="@string/title_activity_training_program" >
+        </activity>
+        <activity
+            android:name=".warmups.WarmupsActivity"
+            android:label="@string/title_activity_warmups" >
+        </activity>
+        <activity
+            android:name=".pullups_type.PullupsTypesActivity"
+            android:label="@string/title_activity_pullups_types" >
+        </activity>
+        <activity
+            android:name=".auxiliary.AuxiliaryMovementsActivity"
+            android:label="@string/title_activity_auxiliary_movements" >
+        </activity>
+        <activity
+            android:name=".muscle_graph.MuscleGraphActivity"
+            android:label="@string/title_activity_muscle_graph" >
+        </activity>
+        <activity
+            android:name=".nutrition.NutritionActivity"
+            android:label="@string/title_activity_nutrition" >
+        </activity>
+        <activity
+            android:name=".alert_setting.AlertSettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".go_pro.GoProActivity"
+            android:label="@string/title_activity_go_pro" >
+        </activity>
     </application>
 
 </manifest>

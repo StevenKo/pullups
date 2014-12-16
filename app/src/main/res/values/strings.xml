@@ -7,5 +7,15 @@
     <string name="action_settings">Settings</string>
     <string name="index_train_fragment">Index Train fragment</string>
     <string name="index_summary_fragment">Index Summary fragment</string>
+    <string name="title_activity_statistic">Statistic Activity</string>
+    <string name="title_activity_training_program">TrainingProgramActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_warmups">WarmupsActivity</string>
+    <string name="title_activity_pullups_types">PullupsTypesActivity</string>
+    <string name="title_activity_auxiliary_movements">AuxiliaryMovementsActivity</string>
+    <string name="title_activity_muscle_graph">MuscleGraphActivity</string>
+    <string name="title_activity_nutrition">NutritionActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_go_pro">GoProActivity</string>
 
 </resources>
