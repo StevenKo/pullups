@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.widget.Toast;
 
 import com.android.slidingtab.SlidingTabLayout;
+import com.kosbrother.pullups.navigation.NavigationDrawerCallbacks;
+import com.kosbrother.pullups.navigation.NavigationDrawerFragment;
 
 
 public class IndexActivity extends ActionBarActivity implements NavigationDrawerCallbacks {

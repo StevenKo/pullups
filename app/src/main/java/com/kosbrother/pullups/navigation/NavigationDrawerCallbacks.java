@@ -1,4 +1,4 @@
-package com.kosbrother.pullups;
+package com.kosbrother.pullups.navigation;
 
 /**
  * Created by poliveira on 27/10/2014.

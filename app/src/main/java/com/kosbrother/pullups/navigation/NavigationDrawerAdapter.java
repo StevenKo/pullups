@@ -1,4 +1,4 @@
-package com.kosbrother.pullups;
+package com.kosbrother.pullups.navigation;
 
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.kosbrother.pullups.R;
 
 import java.util.List;
 

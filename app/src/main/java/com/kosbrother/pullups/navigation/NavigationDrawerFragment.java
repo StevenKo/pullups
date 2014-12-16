@@ -1,10 +1,11 @@
-package com.kosbrother.pullups;
+package com.kosbrother.pullups.navigation;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
@@ -15,6 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.kosbrother.pullups.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -134,10 +137,15 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
     }
 
     public List<NavigationItem> getMenu() {
+        String[] navigationStrings = getResources().getStringArray(R.array.navigationItems);
+        TypedArray navigationIcons = getResources().obtainTypedArray(R.array.navigationItemsIcons);
+
         List<NavigationItem> items = new ArrayList<NavigationItem>();
-        items.add(new NavigationItem("item 1", getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem("item 2", getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem("item 3", getResources().getDrawable(R.drawable.ic_menu_check)));
+
+        for(int i=0; i<navigationStrings.length;i++){
+            items.add(new NavigationItem(navigationStrings[i], getResources().getDrawable(navigationIcons.getResourceId(i,-1))));
+        }
+
         return items;
     }
 

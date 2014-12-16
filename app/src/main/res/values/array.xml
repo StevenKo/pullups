@@ -18,4 +18,26 @@
         <item>Train</item>
         <item>Summary</item>
     </string-array>
+    <string-array name="navigationItems">
+        <item>Statistic</item>
+        <item>Training Program</item>
+        <item>Pull Ups Types</item>
+        <item>Warm Ups</item>
+        <item>Auxiliary Movements</item>
+        <item>Muscle Graph</item>
+        <item>Nutrition</item>
+        <item>Setting</item>
+        <item>Go Pro</item>
+    </string-array>
+    <string-array name="navigationItemsIcons">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+    </string-array>
 </resources>

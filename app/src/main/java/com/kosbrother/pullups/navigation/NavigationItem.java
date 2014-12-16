@@ -1,4 +1,4 @@
-package com.kosbrother.pullups;
+package com.kosbrother.pullups.navigation;
 
 import android.graphics.drawable.Drawable;
 

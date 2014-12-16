@@ -41,7 +41,7 @@
 
         <fragment
             android:id="@+id/fragment_drawer"
-            android:name="com.kosbrother.pullups.NavigationDrawerFragment"
+            android:name="com.kosbrother.pullups.navigation.NavigationDrawerFragment"
             android:layout_width="@dimen/navigation_drawer_width"
             android:layout_height="match_parent"
             android:layout_gravity="start"
