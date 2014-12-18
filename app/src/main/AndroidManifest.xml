@@ -25,19 +25,19 @@
             android:label="@string/title_activity_training_program" >
         </activity>
         <activity
-            android:name=".warmups.WarmupsActivity"
+            android:name=".pic_activities.warmups.WarmupsActivity"
             android:label="@string/title_activity_warmups" >
         </activity>
         <activity
-            android:name=".pullups_type.PullupsTypesActivity"
+            android:name=".pic_activities.pullups_type.PullupsTypesActivity"
             android:label="@string/title_activity_pullups_types" >
         </activity>
         <activity
-            android:name=".auxiliary.AuxiliaryMovementsActivity"
+            android:name=".pic_activities.auxiliary.AuxiliaryMovementsActivity"
             android:label="@string/title_activity_auxiliary_movements" >
         </activity>
         <activity
-            android:name=".muscle_graph.MuscleGraphActivity"
+            android:name=".pic_activities.muscle_graph.MuscleGraphActivity"
             android:label="@string/title_activity_muscle_graph" >
         </activity>
         <activity

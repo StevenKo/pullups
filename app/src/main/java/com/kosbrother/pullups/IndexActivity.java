@@ -11,16 +11,16 @@ import android.widget.Toast;
 
 import com.android.slidingtab.SlidingTabLayout;
 import com.kosbrother.pullups.alert_setting.AlertSettingActivity;
-import com.kosbrother.pullups.auxiliary.AuxiliaryMovementsActivity;
+import com.kosbrother.pullups.pic_activities.auxiliary.AuxiliaryMovementsActivity;
 import com.kosbrother.pullups.go_pro.GoProActivity;
-import com.kosbrother.pullups.muscle_graph.MuscleGraphActivity;
+import com.kosbrother.pullups.pic_activities.muscle_graph.MuscleGraphActivity;
 import com.kosbrother.pullups.navigation.NavigationDrawerCallbacks;
 import com.kosbrother.pullups.navigation.NavigationDrawerFragment;
 import com.kosbrother.pullups.nutrition.NutritionActivity;
-import com.kosbrother.pullups.pullups_type.PullupsTypesActivity;
+import com.kosbrother.pullups.pic_activities.pullups_type.PullupsTypesActivity;
 import com.kosbrother.pullups.statistic.StatisticActivity;
 import com.kosbrother.pullups.training_program.TrainingProgramActivity;
-import com.kosbrother.pullups.warmups.WarmupsActivity;
+import com.kosbrother.pullups.pic_activities.warmups.WarmupsActivity;
 
 
 public class IndexActivity extends ActionBarActivity implements NavigationDrawerCallbacks {

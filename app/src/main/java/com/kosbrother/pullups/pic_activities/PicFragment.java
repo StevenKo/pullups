@@ -1,4 +1,4 @@
-package com.kosbrother.pullups.pullups_type;
+package com.kosbrother.pullups.pic_activities;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.kosbrother.pullups.R;
 
-public class PullUpsTypeFragment extends Fragment {
+public class PicFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -28,8 +28,8 @@ public class PullUpsTypeFragment extends Fragment {
      * @return A new instance of fragment PullUpsTypeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PullUpsTypeFragment newInstance(String param1, String param2) {
-        PullUpsTypeFragment fragment = new PullUpsTypeFragment();
+    public static PicFragment newInstance(String param1, String param2) {
+        PicFragment fragment = new PicFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -37,7 +37,7 @@ public class PullUpsTypeFragment extends Fragment {
         return fragment;
     }
 
-    public PullUpsTypeFragment() {
+    public PicFragment() {
         // Required empty public constructor
     }
 
@@ -53,7 +53,7 @@ public class PullUpsTypeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View fragmentLayout = inflater.inflate(R.layout.fragment_pull_ups_type, container, false);
+        View fragmentLayout = inflater.inflate(R.layout.fragment_pic, container, false);
         ImageView pullupPic = (ImageView)fragmentLayout.findViewById(R.id.pullup_pic);
         pullupPic.setImageResource(R.drawable.pull_up_test);
 

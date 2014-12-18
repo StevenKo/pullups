@@ -43,6 +43,34 @@
         <item>反手</item>
         <item>正手1</item>
     </string-array>
+
+    <string-array name="WarmUpsSections">
+        <item>暖身1</item>
+        <item>暖身2</item>
+        <item>暖身3</item>
+        <item>暖身4</item>
+        <item>暖身5</item>
+        <item>暖身6</item>
+        <item>暖身7</item>
+        <item>反手</item>
+    </string-array>
+
+    <string-array name="AuxiliarySections">
+        <item>輔助動作1</item>
+        <item>輔助動作2</item>
+        <item>輔助動作3</item>
+        <item>輔助動作4</item>
+        <item>輔助動作5</item>
+        <item>輔助動作6</item>
+    </string-array>
+
+    <string-array name="MuscleSections">
+        <item>肌肉1</item>
+        <item>肌肉2</item>
+        <item>肌肉3</item>
+        <item>肌肉4</item>
+    </string-array>
+
     <string-array name="navigationItems">
         <item>Statistic</item>
         <item>Training Program</item>
