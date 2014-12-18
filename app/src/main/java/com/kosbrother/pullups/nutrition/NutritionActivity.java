@@ -1,15 +1,18 @@
 package com.kosbrother.pullups.nutrition;
 
+import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.android.slidingtab.SlidingTabLayout;
 import com.kosbrother.pullups.R;
 
-public class NutritionActivity extends ActionBarActivity {
+public class NutritionActivity extends ActionBarActivity implements NutritionFragment.OnFragmentInteractionListener {
 
     private Toolbar mToolbar;
 
@@ -24,6 +27,20 @@ public class NutritionActivity extends ActionBarActivity {
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setTitle(getString(R.string.title_activity_nutrition));
+
+        setViewPagerAndSlidingTab();
+    }
+
+    private void setViewPagerAndSlidingTab() {
+        String[] tabContents = getResources().getStringArray(R.array.NutritionSections);
+        NutritionPagerAdapter adapter = new NutritionPagerAdapter(getSupportFragmentManager(),tabContents);
+
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setAdapter(adapter);
+
+        SlidingTabLayout mSlidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
+        mSlidingTabLayout.setViewPager(pager);
+
     }
 
 
@@ -46,5 +63,11 @@ public class NutritionActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(String id) {
+        Toast.makeText(getApplicationContext(), "The clicked is " + id,
+                Toast.LENGTH_LONG).show();
     }
 }

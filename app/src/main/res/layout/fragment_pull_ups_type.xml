@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kosbrother.pullups.pullups_type.PullUpsTypeFragment">
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pullup_pic"
+        android:layout_above="@+id/info_text"
+        />
+
+
+</RelativeLayout>

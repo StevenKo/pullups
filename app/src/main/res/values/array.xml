@@ -18,6 +18,31 @@
         <item>Train</item>
         <item>Summary</item>
     </string-array>
+    <string-array name="NutritionSections">
+        <item>能量攝取</item>
+        <item>米飯雜糧</item>
+        <item>麵包</item>
+        <item>麵類</item>
+        <item>粉類</item>
+        <item>肉魚</item>
+        <item>奶蛋</item>
+        <item>豆製品</item>
+        <item>根莖</item>
+        <item>蔬菜</item>
+        <item>水果</item>
+        <item>點心</item>
+    </string-array>
+    <string-array name="PullupsTypesSections">
+        <item>正手</item>
+        <item>反手</item>
+        <item>正手1</item>
+        <item>正手</item>
+        <item>反手</item>
+        <item>正手1</item>
+        <item>正手</item>
+        <item>反手</item>
+        <item>正手1</item>
+    </string-array>
     <string-array name="navigationItems">
         <item>Statistic</item>
         <item>Training Program</item>
