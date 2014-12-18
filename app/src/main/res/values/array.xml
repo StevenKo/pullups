@@ -79,10 +79,12 @@
         <item>Auxiliary Movements</item>
         <item>Muscle Graph</item>
         <item>Nutrition</item>
-        <item>Setting</item>
+        <item>Alert Setting</item>
         <item>Go Pro</item>
+        <item>Send Feedback</item>
     </string-array>
     <string-array name="navigationItemsIcons">
+        <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>

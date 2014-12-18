@@ -23,7 +23,7 @@ public class TrainingProgramActivity extends ActionBarActivity {
 
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
-        ab.setTitle(getString(R.string.title_activity_statistic) + ":" + "tsts");
+        ab.setTitle(getString(R.string.title_activity_training_program));
     }
 
 

@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kosbrother.pullups.statistic.StatisticActivity">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_actionbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/sunday_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="周日"
+                android:textSize="18dp"
+                android:textColor="@color/setting_text_color"
+                android:layout_toRightOf="@+id/sunday_checkbox"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00"
+                android:textSize="18dp"
+                android:textColor="@color/setting_text_color"
+                android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_margin="10dp"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/sunday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周日"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/sunday_checkbox"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/sunday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周日"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/sunday_checkbox"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/sunday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周日"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/sunday_checkbox"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/sunday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周日"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/sunday_checkbox"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/sunday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周日"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/sunday_checkbox"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/sunday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周日"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/sunday_checkbox"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="18dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>
