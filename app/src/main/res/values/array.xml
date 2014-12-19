@@ -71,6 +71,18 @@
         <item>肌肉4</item>
     </string-array>
 
+    <string-array name="TraingSections">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level Pro</item>
+    </string-array>
+
+    <string-array name="StatisticSections">
+        <item>圖表</item>
+        <item>列表</item>
+    </string-array>
+
     <string-array name="navigationItems">
         <item>Statistic</item>
         <item>Training Program</item>

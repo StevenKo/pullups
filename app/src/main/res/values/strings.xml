@@ -8,7 +8,7 @@
     <string name="index_train_fragment">Index Train fragment</string>
     <string name="index_summary_fragment">Index Summary fragment</string>
     <string name="title_activity_statistic">Statistic Activity</string>
-    <string name="title_activity_training_program">TrainingProgramActivity</string>
+    <string name="title_activity_training_program">Traing Program Selection</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_warmups">WarmupsActivity</string>
     <string name="title_activity_pullups_types">PullupsTypesActivity</string>
