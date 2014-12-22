@@ -1,6 +1,7 @@
 package com.kosbrother.pullups;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -11,16 +12,16 @@ import android.widget.Toast;
 
 import com.android.slidingtab.SlidingTabLayout;
 import com.kosbrother.pullups.alert_setting.AlertSettingActivity;
-import com.kosbrother.pullups.pic_activities.auxiliary.AuxiliaryMovementsActivity;
 import com.kosbrother.pullups.go_pro.GoProActivity;
-import com.kosbrother.pullups.pic_activities.muscle_graph.MuscleGraphActivity;
 import com.kosbrother.pullups.navigation.NavigationDrawerCallbacks;
 import com.kosbrother.pullups.navigation.NavigationDrawerFragment;
 import com.kosbrother.pullups.nutrition.NutritionActivity;
+import com.kosbrother.pullups.pic_activities.auxiliary.AuxiliaryMovementsActivity;
+import com.kosbrother.pullups.pic_activities.muscle_graph.MuscleGraphActivity;
 import com.kosbrother.pullups.pic_activities.pullups_type.PullupsTypesActivity;
+import com.kosbrother.pullups.pic_activities.warmups.WarmupsActivity;
 import com.kosbrother.pullups.statistic.StatisticActivity;
 import com.kosbrother.pullups.training_program.TrainingProgramActivity;
-import com.kosbrother.pullups.pic_activities.warmups.WarmupsActivity;
 
 
 public class IndexActivity extends ActionBarActivity implements NavigationDrawerCallbacks {
@@ -103,6 +104,18 @@ public class IndexActivity extends ActionBarActivity implements NavigationDrawer
             case 8:
                 Intent proIntent = new Intent(this, GoProActivity.class);
                 startActivity(proIntent);
+                break;
+            case 9:
+                String url = "https://play.google.com/store/apps/details?id=com.novel.reader";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+                break;
+            case 10:
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                        "mailto","abc@gmail.com", null));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback for Pullups");
+                startActivity(Intent.createChooser(emailIntent, "Send email..."));
                 break;
         }
         Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();

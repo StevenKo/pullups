@@ -93,9 +93,11 @@
         <item>Nutrition</item>
         <item>Alert Setting</item>
         <item>Go Pro</item>
+        <item>Rate App</item>
         <item>Send Feedback</item>
     </string-array>
     <string-array name="navigationItemsIcons">
+        <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>
