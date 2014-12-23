@@ -73,7 +73,9 @@
                     android:layout_alignParentRight="true"/>
 
             </RelativeLayout>
-            <Button android:layout_width="match_parent"
+            <Button
+                    android:id="@+id/startSession"
+                    android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:text="Start Session">
 
