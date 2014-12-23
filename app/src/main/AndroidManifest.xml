@@ -52,6 +52,10 @@
             android:name=".go_pro.GoProActivity"
             android:label="@string/title_activity_go_pro" >
         </activity>
+        <activity
+            android:name=".training_session.TraingingActivity"
+            android:label="@string/title_activity_trainging" >
+        </activity>
     </application>
 
 </manifest>

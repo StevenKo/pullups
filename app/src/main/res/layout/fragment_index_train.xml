@@ -74,7 +74,7 @@
 
             </RelativeLayout>
             <Button
-                    android:id="@+id/startSession"
+                    android:id="@+id/start_session_test"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:text="Start Session">
@@ -143,10 +143,11 @@
                     android:layout_alignParentRight="true"/>
 
             </RelativeLayout>
-            <Button android:layout_width="match_parent"
+            <Button
+                android:id="@+id/start_record_test"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="Start Record Test">
-
             </Button>
 
         </LinearLayout>
