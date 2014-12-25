@@ -97,16 +97,16 @@
         <item>Send Feedback</item>
     </string-array>
     <string-array name="navigationItemsIcons">
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
+        <item>@drawable/statistic</item>
+        <item>@drawable/training_program</item>
+        <item>@drawable/pullups_type</item>
+        <item>@drawable/warm_ups</item>
+        <item>@drawable/auxiliary_movements</item>
+        <item>@drawable/muscle_graph</item>
+        <item>@drawable/nutrition</item>
+        <item>@drawable/alert_setting</item>
+        <item>@drawable/go_pro</item>
+        <item>@drawable/rate_app</item>
+        <item>@drawable/feedback</item>
     </string-array>
 </resources>
