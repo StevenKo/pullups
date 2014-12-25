@@ -161,6 +161,8 @@ public class SlidingTabLayout extends HorizontalScrollView {
         if (viewPager != null) {
             viewPager.setOnPageChangeListener(new InternalViewPagerListener());
             populateTabStrip();
+            int index = viewPager.getCurrentItem();
+            mTabStrip.setTabTitleViewsColor(index);
         }
     }
 
@@ -296,6 +298,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
             if (mViewPagerPageChangeListener != null) {
                 mViewPagerPageChangeListener.onPageSelected(position);
             }
+            mTabStrip.setTabTitleViewsColor(position);
         }
 
     }

@@ -115,11 +115,10 @@ class SlidingTabStrip extends LinearLayout {
     void onViewPagerPageChanged(int position, float positionOffset) {
         mSelectedPosition = position;
         mSelectionOffset = positionOffset;
-        setTabTitleViewsColor(position);
         invalidate();
     }
 
-    private void setTabTitleViewsColor(int position) {
+    public void setTabTitleViewsColor(int position) {
         for(int i=0;i<mTabTitleViews.size();i++){
             if(position == i)
                 mTabTitleViews.get(i).setTextColor(DEFAULT_SELECTED_INDICATOR_COLOR);
