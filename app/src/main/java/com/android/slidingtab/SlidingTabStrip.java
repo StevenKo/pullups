@@ -25,13 +25,17 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 class SlidingTabStrip extends LinearLayout {
 
     private static final int DEFAULT_BOTTOM_BORDER_THICKNESS_DIPS = 2;
     private static final byte DEFAULT_BOTTOM_BORDER_COLOR_ALPHA = 0x26;
-    private static final int SELECTED_INDICATOR_THICKNESS_DIPS = 8;
-    private static final int DEFAULT_SELECTED_INDICATOR_COLOR = 0xFF33B5E5;
+    private static final int SELECTED_INDICATOR_THICKNESS_DIPS = 4;
+    private static final int DEFAULT_SELECTED_INDICATOR_COLOR = 0xFFCCCC11;
+    private static final int DEFAULT_SlidingTab_UnSelected_TextColor = 0xdddddddd;
 
     private static final int DEFAULT_DIVIDER_THICKNESS_DIPS = 1;
     private static final byte DEFAULT_DIVIDER_COLOR_ALPHA = 0x20;
@@ -53,6 +57,7 @@ class SlidingTabStrip extends LinearLayout {
 
     private SlidingTabLayout.TabColorizer mCustomTabColorizer;
     private final SimpleTabColorizer mDefaultTabColorizer;
+    private ArrayList<TextView> mTabTitleViews = new ArrayList<TextView>();
 
     SlidingTabStrip(Context context) {
         this(context, null);
@@ -110,7 +115,17 @@ class SlidingTabStrip extends LinearLayout {
     void onViewPagerPageChanged(int position, float positionOffset) {
         mSelectedPosition = position;
         mSelectionOffset = positionOffset;
+        setTabTitleViewsColor(position);
         invalidate();
+    }
+
+    private void setTabTitleViewsColor(int position) {
+        for(int i=0;i<mTabTitleViews.size();i++){
+            if(position == i)
+                mTabTitleViews.get(i).setTextColor(DEFAULT_SELECTED_INDICATOR_COLOR);
+            else
+                mTabTitleViews.get(i).setTextColor(DEFAULT_SlidingTab_UnSelected_TextColor);
+        }
     }
 
     @Override
@@ -181,6 +196,10 @@ class SlidingTabStrip extends LinearLayout {
         float g = (Color.green(color1) * ratio) + (Color.green(color2) * inverseRation);
         float b = (Color.blue(color1) * ratio) + (Color.blue(color2) * inverseRation);
         return Color.rgb((int) r, (int) g, (int) b);
+    }
+
+    public void addTabTitleView(TextView tabTitleView) {
+        this.mTabTitleViews.add(tabTitleView);
     }
 
     private static class SimpleTabColorizer implements SlidingTabLayout.TabColorizer {
