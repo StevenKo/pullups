@@ -1,38 +1,35 @@
 package com.kosbrother.pullups.pic_activities;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 import com.kosbrother.pullups.R;
 
 public class PicFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private static final String ARG_PARAM1 = "picArrayResource";
+    private static final String ARG_PARAM2 = "stringResource";
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment PullUpsTypeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static PicFragment newInstance(String param1, String param2) {
+    private int picArrayResourceID;
+    private int stringResourceID;
+    private TypedArray picTypedArray;
+    private String infoText;
+
+
+    public static PicFragment newInstance(int picArrayResource, int stringResource) {
         PicFragment fragment = new PicFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putInt(ARG_PARAM1, picArrayResource);
+        args.putInt(ARG_PARAM2, stringResource);
         fragment.setArguments(args);
         return fragment;
     }
@@ -45,8 +42,10 @@ public class PicFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            picArrayResourceID = getArguments().getInt(ARG_PARAM1);
+            stringResourceID = getArguments().getInt(ARG_PARAM2);
+            picTypedArray = getResources().obtainTypedArray(picArrayResourceID);
+            infoText = getString(stringResourceID);
         }
     }
 
@@ -54,9 +53,18 @@ public class PicFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View fragmentLayout = inflater.inflate(R.layout.fragment_pic, container, false);
-        ImageView pullupPic = (ImageView)fragmentLayout.findViewById(R.id.pullup_pic);
-        pullupPic.setImageResource(R.drawable.pull_up_test);
+        LinearLayout picsLayout = (LinearLayout)fragmentLayout.findViewById(R.id.pics_layout);
 
+        for(int i=0; i< picTypedArray.length();i++){
+            ImageView picView = new ImageView(getActivity());
+            picView.setImageResource(picTypedArray.getResourceId(i, -1));
+            picView.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT,1.0f));
+            picsLayout.addView(picView);
+        }
+
+
+        TextView info = (TextView)fragmentLayout.findViewById(R.id.info_text);
+        info.setText(Html.fromHtml(infoText));
 
         return fragmentLayout;
     }

@@ -17,6 +17,6 @@
     <color name="myNavigationColor">#000000</color>
 
     <color name="selected_gray">#CCCC11</color>
-
+    <color name="main_red">#D60045</color>
     <color name="setting_text_color">#2098db</color>
 </resources>

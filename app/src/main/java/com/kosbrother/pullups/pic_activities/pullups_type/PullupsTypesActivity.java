@@ -1,5 +1,6 @@
 package com.kosbrother.pullups.pic_activities.pullups_type;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -33,7 +34,10 @@ public class PullupsTypesActivity extends ActionBarActivity {
 
     private void setViewPagerAndSlidingTab() {
         String[] tabContents = getResources().getStringArray(R.array.WarmUpsSections);
-        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents);
+        TypedArray pullupTypes = getResources().obtainTypedArray(R.array.pullupTypes);
+        TypedArray pullupTypesInfos = getResources().obtainTypedArray(R.array.pullupTypesInfos);
+
+        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents, pullupTypes, pullupTypesInfos);
 
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);

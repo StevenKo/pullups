@@ -1,5 +1,6 @@
 package com.kosbrother.pullups.pic_activities;
 
+import android.content.res.TypedArray;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -10,15 +11,25 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class PicPagerAdapter extends FragmentPagerAdapter {
 
     private String[] mTabContents;
+    private TypedArray mPullupTypesPics;
+    private TypedArray mPullupTypesInfos;
 
     public PicPagerAdapter(FragmentManager fm, String[] tabContents) {
         super(fm);
         mTabContents = tabContents;
     }
 
+    public PicPagerAdapter(FragmentManager supportFragmentManager, String[] tabContents, TypedArray pullupTypesPics, TypedArray pullupTypesInfos) {
+        super(supportFragmentManager);
+        mTabContents = tabContents;
+        mPullupTypesPics = pullupTypesPics;
+        mPullupTypesInfos = pullupTypesInfos;
+    }
+
     @Override
     public Fragment getItem(int position) {
-        return PicFragment.newInstance("2", "test2");
+
+        return PicFragment.newInstance(mPullupTypesPics.getResourceId(position, -1),mPullupTypesInfos.getResourceId(position, -1));
     }
 
     @Override

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kosbrother.pullups.pic_activities.PicFragment">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardBackgroundColor="#111111">
+
+
+            <LinearLayout
+                android:id="@+id/pics_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/tip">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tips:"
+                        android:textColor="@color/main_red"
+                        android:textStyle="bold|italic"
+                        />
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/hello_blank_fragment"
+                        android:layout_below="@+id/tip"/>
+                </RelativeLayout>
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -109,4 +109,71 @@
         <item>@drawable/rate_app</item>
         <item>@drawable/feedback</item>
     </string-array>
+
+    <string-array name="pullupTypes">
+        <item>@array/pullup_types_1</item>
+        <item>@array/pullup_types_2</item>
+        <item>@array/pullup_types_3</item>
+        <item>@array/pullup_types_4</item>
+        <item>@array/pullup_types_5</item>
+        <item>@array/pullup_types_6</item>
+        <item>@array/pullup_types_7</item>
+        <item>@array/pullup_types_8</item>
+        <item>@array/pullup_types_9</item>
+        <item>@array/pullup_types_10</item>
+    </string-array>
+    <string-array name="pullupTypesInfos">
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+    </string-array>
+
+    <string-array name="pullup_types_1">
+        <item>@drawable/pullup_type1_1</item>
+        <item>@drawable/pullup_type1_2</item>
+    </string-array>
+    <string-array name="pullup_types_2">
+        <item>@drawable/pullup_type2_1</item>
+        <item>@drawable/pullup_type2_2</item>
+    </string-array>
+    <string-array name="pullup_types_3">
+        <item>@drawable/pullup_type3_1</item>
+        <item>@drawable/pullup_type3_2</item>
+    </string-array>
+    <string-array name="pullup_types_4">
+        <item>@drawable/pullup_type4_1</item>
+        <item>@drawable/pullup_type4_2</item>
+    </string-array>
+    <string-array name="pullup_types_5">
+        <item>@drawable/pullup_type5_1</item>
+        <item>@drawable/pullup_type5_2</item>
+    </string-array>
+    <string-array name="pullup_types_6">
+        <item>@drawable/pullup_type6_1</item>
+        <item>@drawable/pullup_type6_2</item>
+    </string-array>
+    <string-array name="pullup_types_7">
+        <item>@drawable/pullup_type7_1</item>
+        <item>@drawable/pullup_type7_2</item>
+    </string-array>
+    <string-array name="pullup_types_8">
+        <item>@drawable/pullup_type8_1</item>
+        <item>@drawable/pullup_type8_2</item>
+    </string-array>
+    <string-array name="pullup_types_9">
+        <item>@drawable/pullup_type9_1</item>
+        <item>@drawable/pullup_type9_2</item>
+    </string-array>
+    <string-array name="pullup_types_10">
+        <item>@drawable/pullup_type10_1</item>
+        <item>@drawable/pullup_type10_2</item>
+    </string-array>
+
 </resources>
