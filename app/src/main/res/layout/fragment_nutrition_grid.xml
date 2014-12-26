@@ -5,7 +5,14 @@
     tools:context="com.kosbrother.pullups.nutrition.NutritionFragment">
 
     <GridView android:id="@android:id/list" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:numColumns="2" />
+        android:layout_height="match_parent" android:numColumns="2"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:cacheColorHint="#FFFFFF"
+        android:background="@color/backgroundcolor"
+        android:stretchMode="columnWidth"
+        android:layout_margin="2dp"
+        />
 
     <TextView android:id="@android:id/empty" android:layout_width="match_parent"
         android:layout_height="match_parent" android:gravity="center" />

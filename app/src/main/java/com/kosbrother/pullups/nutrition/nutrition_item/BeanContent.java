@@ -11,16 +11,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class RiceContent {
+public class BeanContent {
 
     public  ArrayList<NutritionItem> ITEMS = new ArrayList<NutritionItem>();
     public  Map<String, NutritionItem> ITEM_MAP = new HashMap<String, NutritionItem>();
 
-    public RiceContent(Context context){
+    public BeanContent(Context context){
         Resources resources = context.getResources();
-        TypedArray rice_names = resources.obtainTypedArray(R.array.rice_names);
-        TypedArray rice_gi_value = resources.obtainTypedArray(R.array.rice_gi_value);
-        TypedArray rice_caloric = resources.obtainTypedArray(R.array.rice_caloric);
+        TypedArray rice_names = resources.obtainTypedArray(R.array.bean_names);
+        TypedArray rice_gi_value = resources.obtainTypedArray(R.array.bean_gi_value);
+        TypedArray rice_caloric = resources.obtainTypedArray(R.array.bean_caloric);
 
         for(int i=0;i<rice_names.length();i++){
             addItem(new NutritionItem(rice_names.getString(i),rice_gi_value.getInt(i,0),rice_caloric.getInt(i,0)));

@@ -22,7 +22,7 @@ public class NutritionPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             kk = NutritionIntroFragment.newInstance("1","test1");
         } else {
-            kk = NutritionFragment.newInstance("2", "test2");
+            kk = NutritionFragment.newInstance(position);
         }
         return kk;
     }

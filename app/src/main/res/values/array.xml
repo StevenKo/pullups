@@ -176,4 +176,440 @@
         <item>@drawable/pullup_type10_2</item>
     </string-array>
 
+
+    <string-array name="rice_names">
+        <item>白米</item>
+        <item>糙米</item>
+        <item>白米稀飯</item>
+        <item>糙米稀飯</item>
+        <item>燕麥</item>
+        <item>麻糬</item>
+        <item>胚芽米</item>
+        <item>糙米片</item>
+        <item>白米+糙米</item>
+        <item>麥片</item>
+        <item>紅豆飯</item>
+    </string-array>
+    <array name="rice_gi_value">
+        <item>84</item>
+        <item>56</item>
+        <item>57</item>
+        <item>47</item>
+        <item>55</item>
+        <item>85</item>
+        <item>70</item>
+        <item>65</item>
+        <item>65</item>
+        <item>65</item>
+        <item>77</item>
+    </array>
+    <array name="rice_caloric">
+        <item>356</item>
+        <item>350</item>
+        <item>71</item>
+        <item>70</item>
+        <item>380</item>
+        <item>235</item>
+        <item>354</item>
+        <item>365</item>
+        <item>352</item>
+        <item>340</item>
+        <item>189</item>
+    </array>
+
+    <string-array name="bread_names">
+        <item>法國麵包</item>
+        <item>吐司</item>
+        <item>培果</item>
+        <item>牛角麵包</item>
+        <item>黑麥麵包</item>
+        <item>全麥麵包</item>
+    </string-array>
+    <array name="bread_gi_value">
+        <item>93</item>
+        <item>91</item>
+        <item>75</item>
+        <item>68</item>
+        <item>58</item>
+        <item>50</item>
+    </array>
+    <array name="bread_caloric">
+        <item>279</item>
+        <item>264</item>
+        <item>157</item>
+        <item>448</item>
+        <item>264</item>
+        <item>240</item>
+    </array>
+
+    <string-array name="noodle_names">
+        <item>烏龍麵</item>
+        <item>麵線</item>
+        <item>義大利麵</item>
+        <item>中華麵</item>
+        <item>蕎麥麵</item>
+        <item>全麥麵</item>
+    </string-array>
+    <array name="noodle_gi_value">
+        <item>80</item>
+        <item>68</item>
+        <item>65</item>
+        <item>61</item>
+        <item>59</item>
+        <item>50</item>
+    </array>
+    <array name="noodle_caloric">
+        <item>270</item>
+        <item>356</item>
+        <item>378</item>
+        <item>281</item>
+        <item>274</item>
+        <item>378</item>
+    </array>
+
+    <string-array name="starch_names">
+        <item>麵包粉</item>
+        <item>太白粉</item>
+        <item>低筋麵粉</item>
+        <item>全麥麵粉</item>
+    </string-array>
+    <array name="starch_gi_value">
+        <item>70</item>
+        <item>65</item>
+        <item>60</item>
+        <item>45</item>
+    </array>
+    <array name="starch_caloric">
+        <item>373</item>
+        <item>330</item>
+        <item>368</item>
+        <item>328</item>
+    </array>
+
+    <string-array name="meat_names">
+        <item>豬肉</item>
+        <item>雞肉</item>
+        <item>魚丸</item>
+        <item>香腸</item>
+        <item>羊肉</item>
+        <item>蜆</item>
+        <item>臘腸</item>
+        <item>蛤蜊</item>
+        <item>蒲燒鰻</item>
+        <item>培根</item>
+        <item>鮪魚罐頭</item>
+        <item>蝦子</item>
+        <item>烤豬肉</item>
+        <item>鮪魚</item>
+        <item>花枝</item>
+        <item>牛肉</item>
+        <item>喜相逢</item>
+        <item>牡蠣</item>
+        <item>火腿</item>
+        <item>干貝</item>
+        <item>鱈魚卵</item>
+    </string-array>
+    <array name="meat_gi_value">
+        <item>45</item>
+        <item>45</item>
+        <item>52</item>
+        <item>45</item>
+        <item>45</item>
+        <item>44</item>
+        <item>48</item>
+        <item>40</item>
+        <item>43</item>
+        <item>49</item>
+        <item>55</item>
+        <item>40</item>
+        <item>51</item>
+        <item>40</item>
+        <item>40</item>
+        <item>46</item>
+        <item>40</item>
+        <item>45</item>
+        <item>46</item>
+        <item>42</item>
+        <item>40</item>
+    </array>
+    <array name="meat_caloric">
+        <item>263</item>
+        <item>200</item>
+        <item>113</item>
+        <item>321</item>
+        <item>227</item>
+        <item>51</item>
+        <item>497</item>
+        <item>30</item>
+        <item>293</item>
+        <item>405</item>
+        <item>288</item>
+        <item>83</item>
+        <item>171</item>
+        <item>125</item>
+        <item>88</item>
+        <item>138</item>
+        <item>177</item>
+        <item>60</item>
+        <item>196</item>
+        <item>97</item>
+        <item>140</item>
+    </array>
+
+    <string-array name="milk_names">
+        <item>加糖煉乳</item>
+        <item>鮮奶油</item>
+        <item>奶油起士</item>
+        <item>全脂鮮奶</item>
+        <item>蛋</item>
+        <item>奶油</item>
+        <item>低脂鮮奶</item>
+        <item>脫脂鮮奶</item>
+        <item>原味優格</item>
+    </string-array>
+    <array name="milk_gi_value">
+        <item>82</item>
+        <item>39</item>
+        <item>33</item>
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+        <item>26</item>
+        <item>25</item>
+        <item>25</item>
+    </array>
+    <array name="milk_caloric">
+        <item>331</item>
+        <item>433</item>
+        <item>346</item>
+        <item>359</item>
+        <item>151</item>
+        <item>745</item>
+        <item>46</item>
+        <item>67</item>
+        <item>62</item>
+    </array>
+
+    <string-array name="bean_names">
+        <item>炸豆腐</item>
+        <item>豌豆</item>
+        <item>油豆腐</item>
+        <item>豆腐</item>
+        <item>毛豆</item>
+        <item>腰果</item>
+        <item>杏仁</item>
+        <item>花生</item>
+    </string-array>
+    <array name="bean_gi_value">
+        <item>46</item>
+        <item>45</item>
+        <item>43</item>
+        <item>42</item>
+        <item>30</item>
+        <item>29</item>
+        <item>25</item>
+        <item>22</item>
+    </array>
+    <array name="bean_caloric">
+        <item>150</item>
+        <item>93</item>
+        <item>386</item>
+        <item>72</item>
+        <item>135</item>
+        <item>576</item>
+        <item>598</item>
+        <item>562</item>
+    </array>
+
+    <string-array name="stem_names">
+        <item>馬鈴薯</item>
+        <item>山藥</item>
+        <item>芋頭</item>
+        <item>甘薯</item>
+        <item>蒟蒻</item>
+        <item>蒟蒻條</item>
+    </string-array>
+    <array name="stem_gi_value">
+        <item>90</item>
+        <item>75</item>
+        <item>64</item>
+        <item>55</item>
+        <item>24</item>
+        <item>23</item>
+    </array>
+    <array name="stem_caloric">
+        <item>76</item>
+        <item>108</item>
+        <item>58</item>
+        <item>132</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+
+    <string-array name="greens_names">
+        <item>紅蘿蔔</item>
+        <item>玉米</item>
+        <item>南瓜</item>
+        <item>韭菜</item>
+        <item>牛蒡</item>
+        <item>洋蔥</item>
+        <item>蕃茄</item>
+        <item>高麗菜</item>
+        <item>四季豆</item>
+        <item>白蘿蔔</item>
+        <item>竹筍</item>
+        <item>青椒</item>
+        <item>蘆筍</item>
+        <item>茼蒿</item>
+        <item>茄子</item>
+        <item>花椰菜</item>
+        <item>苦瓜</item>
+        <item>小黃瓜</item>
+        <item>青江菜</item>
+        <item>豆芽菜</item>
+        <item>菠菜</item>
+    </string-array>
+    <array name="greens_gi_value">
+        <item>80</item>
+        <item>70</item>
+        <item>65</item>
+        <item>52</item>
+        <item>45</item>
+        <item>30</item>
+        <item>30</item>
+        <item>26</item>
+        <item>26</item>
+        <item>26</item>
+        <item>26</item>
+        <item>26</item>
+        <item>25</item>
+        <item>25</item>
+        <item>25</item>
+        <item>25</item>
+        <item>24</item>
+        <item>23</item>
+        <item>23</item>
+        <item>22</item>
+        <item>15</item>
+    </array>
+    <array name="greens_caloric">
+        <item>37</item>
+        <item>92</item>
+        <item>91</item>
+        <item>118</item>
+        <item>65</item>
+        <item>37</item>
+        <item>19</item>
+        <item>23</item>
+        <item>23</item>
+        <item>18</item>
+        <item>26</item>
+        <item>22</item>
+        <item>22</item>
+        <item>22</item>
+        <item>22</item>
+        <item>33</item>
+        <item>17</item>
+        <item>14</item>
+        <item>9</item>
+        <item>15</item>
+        <item>20</item>
+    </array>
+
+    <string-array name="fruit_names">
+        <item>草莓醬</item>
+        <item>鳳梨</item>
+        <item>葡萄乾</item>
+        <item>香蕉</item>
+        <item>芒果</item>
+        <item>哈蜜瓜</item>
+        <item>桃子</item>
+        <item>櫻桃</item>
+        <item>紅柿</item>
+        <item>蘋果</item>
+        <item>奇異果</item>
+        <item>檸檬</item>
+        <item>柳橙</item>
+        <item>木瓜</item>
+        <item>草莓</item>
+    </string-array>
+    <array name="fruit_gi_value">
+        <item>82</item>
+        <item>65</item>
+        <item>57</item>
+        <item>55</item>
+        <item>49</item>
+        <item>41</item>
+        <item>41</item>
+        <item>37</item>
+        <item>37</item>
+        <item>36</item>
+        <item>35</item>
+        <item>34</item>
+        <item>31</item>
+        <item>30</item>
+        <item>29</item>
+    </array>
+    <array name="fruit_caloric">
+        <item>262</item>
+        <item>51</item>
+        <item>301</item>
+        <item>86</item>
+        <item>64</item>
+        <item>42</item>
+        <item>40</item>
+        <item>60</item>
+        <item>60</item>
+        <item>54</item>
+        <item>53</item>
+        <item>54</item>
+        <item>46</item>
+        <item>38</item>
+        <item>34</item>
+    </array>
+
+    <string-array name="dessert_names">
+        <item>功克力</item>
+        <item>餡麻糬</item>
+        <item>甜甜圈</item>
+        <item>牛奶糖</item>
+        <item>洋芋片</item>
+        <item>蛋糕</item>
+        <item>鬆餅</item>
+        <item>紅豆沙</item>
+        <item>餅乾</item>
+        <item>冰淇淋</item>
+        <item>布丁</item>
+        <item>果陳</item>
+    </string-array>
+    <array name="dessert_gi_value">
+        <item>91</item>
+        <item>88</item>
+        <item>86</item>
+        <item>86</item>
+        <item>85</item>
+        <item>82</item>
+        <item>80</item>
+        <item>80</item>
+        <item>77</item>
+        <item>65</item>
+        <item>52</item>
+        <item>46</item>
+    </array>
+    <array name="dessert_caloric">
+        <item>557</item>
+        <item>235</item>
+        <item>387</item>
+        <item>433</item>
+        <item>388</item>
+        <item>344</item>
+        <item>261</item>
+        <item>155</item>
+        <item>432</item>
+        <item>212</item>
+        <item>126</item>
+        <item>45</item>
+    </array>
+
+
 </resources>

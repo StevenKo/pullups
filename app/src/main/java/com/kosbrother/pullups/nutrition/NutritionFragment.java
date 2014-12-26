@@ -12,8 +12,18 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.kosbrother.pullups.R;
+import com.kosbrother.pullups.nutrition.nutrition_item.BeanContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.BreadContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.DessertContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.FruitContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.GreensContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.MeatContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.MilkProductsContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.NoodleContent;
 import com.kosbrother.pullups.nutrition.nutrition_item.NutritionItemAdapter;
 import com.kosbrother.pullups.nutrition.nutrition_item.RiceContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.StarchContent;
+import com.kosbrother.pullups.nutrition.nutrition_item.StemContent;
 
 /**
  * A fragment representing a list of Items.
@@ -26,14 +36,8 @@ import com.kosbrother.pullups.nutrition.nutrition_item.RiceContent;
  */
 public class NutritionFragment extends Fragment implements AbsListView.OnItemClickListener {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private static final String ARG_PARAM1 = "nutrition_fragment_position";
+    private int fragmentPosition = 1;
 
     private OnFragmentInteractionListener mListener;
 
@@ -41,11 +45,10 @@ public class NutritionFragment extends Fragment implements AbsListView.OnItemCli
     private NutritionItemAdapter nutritionAdapter;
 
     // TODO: Rename and change types of parameters
-    public static NutritionFragment newInstance(String param1, String param2) {
+    public static NutritionFragment newInstance(int position) {
         NutritionFragment fragment = new NutritionFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putInt(ARG_PARAM1, position);
         fragment.setArguments(args);
         return fragment;
     }
@@ -60,13 +63,44 @@ public class NutritionFragment extends Fragment implements AbsListView.OnItemCli
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            fragmentPosition = getArguments().getInt(ARG_PARAM1,1);
         }
-
-        nutritionAdapter = new NutritionItemAdapter(getActivity(),RiceContent.ITEMS);
+        switch (fragmentPosition){
+            case 1:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new RiceContent(getActivity()).ITEMS);
+                break;
+            case 2:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new BreadContent(getActivity()).ITEMS);
+                break;
+            case 3:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new NoodleContent(getActivity()).ITEMS);
+                break;
+            case 4:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new StarchContent(getActivity()).ITEMS);
+                break;
+            case 5:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new MeatContent(getActivity()).ITEMS);
+                break;
+            case 6:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new MilkProductsContent(getActivity()).ITEMS);
+                break;
+            case 7:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new BeanContent(getActivity()).ITEMS);
+                break;
+            case 8:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new StemContent(getActivity()).ITEMS);
+                break;
+            case 9:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new GreensContent(getActivity()).ITEMS);
+                break;
+            case 10:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new FruitContent(getActivity()).ITEMS);
+                break;
+            case 11:
+                nutritionAdapter = new NutritionItemAdapter(getActivity(),new DessertContent(getActivity()).ITEMS);
+                break;
+        }
     }
 
     @Override
@@ -105,9 +139,7 @@ public class NutritionFragment extends Fragment implements AbsListView.OnItemCli
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (null != mListener) {
-            // Notify the active callbacks interface (the activity, if the
-            // fragment is attached to one) that an item has been selected.
-            mListener.onFragmentInteraction(RiceContent.ITEMS.get(position).name);
+
         }
     }
 
