@@ -52,7 +52,60 @@
         <item>暖身5</item>
         <item>暖身6</item>
         <item>暖身7</item>
-        <item>反手</item>
+        <item>暖身8</item>
+        <item>暖身9</item>
+    </string-array>
+
+    <string-array name="warmupTypes">
+        <item>@array/warmup_types_1</item>
+        <item>@array/warmup_types_2</item>
+        <item>@array/warmup_types_3</item>
+        <item>@array/warmup_types_4</item>
+        <item>@array/warmup_types_5</item>
+        <item>@array/warmup_types_6</item>
+        <item>@array/warmup_types_7</item>
+        <item>@array/warmup_types_8</item>
+        <item>@array/warmup_types_9</item>
+    </string-array>
+    <string-array name="warmTypesInfos">
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+    </string-array>
+
+    <string-array name="warmup_types_1">
+        <item>@drawable/warmup_1</item>
+    </string-array>
+    <string-array name="warmup_types_2">
+        <item>@drawable/warmup_2</item>
+    </string-array>
+    <string-array name="warmup_types_3">
+        <item>@drawable/warmup_3</item>
+    </string-array>
+    <string-array name="warmup_types_4">
+        <item>@drawable/warmup_4</item>
+    </string-array>
+    <string-array name="warmup_types_5">
+        <item>@drawable/warmup_5</item>
+    </string-array>
+    <string-array name="warmup_types_6">
+        <item>@drawable/warmup_6</item>
+    </string-array>
+    <string-array name="warmup_types_7">
+        <item>@drawable/warmup_7_1</item>
+        <item>@drawable/warmup_7_2</item>
+    </string-array>
+    <string-array name="warmup_types_8">
+        <item>@drawable/warmup_8</item>
+    </string-array>
+    <string-array name="warmup_types_9">
+        <item>@drawable/warmup_9</item>
     </string-array>
 
     <string-array name="AuxiliarySections">

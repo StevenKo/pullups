@@ -1,5 +1,6 @@
 package com.kosbrother.pullups.pic_activities.warmups;
 
+import android.content.res.TypedArray;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -33,7 +34,10 @@ public class WarmupsActivity extends ActionBarActivity {
 
     private void setViewPagerAndSlidingTab() {
         String[] tabContents = getResources().getStringArray(R.array.WarmUpsSections);
-        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents);
+        TypedArray pullupTypes = getResources().obtainTypedArray(R.array.warmupTypes);
+        TypedArray pullupTypesInfos = getResources().obtainTypedArray(R.array.warmTypesInfos);
+
+        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents,pullupTypes,pullupTypesInfos);
 
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);
