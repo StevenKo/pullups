@@ -14,8 +14,8 @@
     <string name="title_activity_pullups_types">PullupsTypesActivity</string>
     <string name="title_activity_auxiliary_movements">AuxiliaryMovementsActivity</string>
     <string name="title_activity_muscle_graph">MuscleGraphActivity</string>
-    <string name="title_activity_nutrition">NutritionActivity</string>
-    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_nutrition">Nutrition</string>
+    <string name="title_activity_alert_setting">Alert</string>
     <string name="title_activity_go_pro">GoProActivity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nutrition_info"><![CDATA[<font color=\'blue\'>V3.0.0:</font><br>新增推薦小說, 並把部分功能移到左列選單<br><font color=\'blue\'>V2.9.3:</font> <br>顯示今日更新小說<br><font color=\'blue\'>V2.9.0:</font> <br>更換小說類別、推薦方式，新增3000本小說<br><font color=\'blue\'>V2.8.5:</font> <br>新增購買<font color=\'red\'>贊助版本(免廣告)</font>, 懇請大家多多支持!<br>]]></string>

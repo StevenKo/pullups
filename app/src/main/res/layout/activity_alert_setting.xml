@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kosbrother.pullups.statistic.StatisticActivity">
+    tools:context="com.kosbrother.pullups.statistic.StatisticActivity"
+    android:background="@color/backgroundcolor">
 
     <include
         android:id="@+id/toolbar_actionbar"
@@ -20,47 +21,266 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/monday"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grid_item_selector"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="12dp">
 
-            <CheckBox
-                android:id="@+id/sunday_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                />
-            <TextView
-                android:gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="周日"
-                android:textSize="18dp"
-                android:textColor="@color/setting_text_color"
-                android:layout_toRightOf="@+id/sunday_checkbox"/>
+                <CheckBox
+                    android:id="@+id/monday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周一"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/monday_checkbox"/>
 
-            <TextView
-                android:gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="00:00"
-                android:textSize="18dp"
-                android:textColor="@color/setting_text_color"
-                android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/monday_time"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
 
             </RelativeLayout>
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:background="#000000"
-                android:layout_margin="10dp"></LinearLayout>
 
             <RelativeLayout
+                android:id="@+id/tuesday"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grid_item_selector"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="12dp">
+
+                <CheckBox
+                    android:id="@+id/tuesday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周二"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/tuesday_checkbox"/>
+
+                <TextView
+                    android:id="@+id/tuesday_time"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wendesday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grid_item_selector"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="12dp">
+
+                <CheckBox
+                    android:id="@+id/wendesday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周三"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/wendesday_checkbox"/>
+
+                <TextView
+                    android:id="@+id/wendesday_time"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thirsday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grid_item_selector"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="12dp">
+
+                <CheckBox
+                    android:id="@+id/thirsday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周四"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/thirsday_checkbox"/>
+
+                <TextView
+                    android:id="@+id/thirsday_time"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/friday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grid_item_selector"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="12dp">
+
+                <CheckBox
+                    android:id="@+id/friday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周五"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/friday_checkbox"/>
+
+                <TextView
+                    android:id="@+id/friday_time"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/saturday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grid_item_selector"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="12dp">
+
+                <CheckBox
+                    android:id="@+id/saturday_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="周六"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_toRightOf="@+id/saturday_checkbox"/>
+
+                <TextView
+                    android:id="@+id/saturday_time"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="00:00"
+                    android:textSize="24dp"
+                    android:textColor="@color/setting_text_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sunday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grid_item_selector"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="12dp">
 
                 <CheckBox
                     android:id="@+id/sunday_checkbox"
@@ -72,181 +292,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="周日"
-                    android:textSize="18dp"
+                    android:textSize="24dp"
                     android:textColor="@color/setting_text_color"
                     android:layout_toRightOf="@+id/sunday_checkbox"/>
 
                 <TextView
+                    android:id="@+id/sunday_time"
                     android:gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="00:00"
-                    android:textSize="18dp"
+                    android:textSize="24dp"
                     android:textColor="@color/setting_text_color"
                     android:layout_alignParentRight="true"/>
-
             </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
-
-                <CheckBox
-                    android:id="@+id/sunday_checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    />
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="周日"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_toRightOf="@+id/sunday_checkbox"/>
-
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="00:00"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_alignParentRight="true"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
-
-                <CheckBox
-                    android:id="@+id/sunday_checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    />
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="周日"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_toRightOf="@+id/sunday_checkbox"/>
-
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="00:00"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_alignParentRight="true"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
-
-                <CheckBox
-                    android:id="@+id/sunday_checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    />
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="周日"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_toRightOf="@+id/sunday_checkbox"/>
-
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="00:00"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_alignParentRight="true"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
-
-                <CheckBox
-                    android:id="@+id/sunday_checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    />
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="周日"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_toRightOf="@+id/sunday_checkbox"/>
-
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="00:00"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_alignParentRight="true"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
-
-                <CheckBox
-                    android:id="@+id/sunday_checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    />
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="周日"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_toRightOf="@+id/sunday_checkbox"/>
-
-                <TextView
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="00:00"
-                    android:textSize="18dp"
-                    android:textColor="@color/setting_text_color"
-                    android:layout_alignParentRight="true"/>
-
-            </RelativeLayout>
-
-
-
         </LinearLayout>
-
-
-
     </ScrollView>
 </RelativeLayout>

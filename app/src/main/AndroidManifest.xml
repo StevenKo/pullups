@@ -46,7 +46,7 @@
         </activity>
         <activity
             android:name=".alert_setting.AlertSettingActivity"
-            android:label="@string/title_activity_setting" >
+            android:label="@string/title_activity_alert_setting" >
         </activity>
         <activity
             android:name=".go_pro.GoProActivity"
@@ -56,6 +56,12 @@
             android:name=".training_session.TraingingActivity"
             android:label="@string/title_activity_trainging" >
         </activity>
+
+        <receiver
+            android:name=".alert_setting.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
     </application>
 
 </manifest>
