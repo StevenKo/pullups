@@ -1,5 +1,6 @@
 package com.kosbrother.pullups.pic_activities.muscle_graph;
 
+import android.content.res.TypedArray;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -33,7 +34,10 @@ public class MuscleGraphActivity extends ActionBarActivity {
 
     private void setViewPagerAndSlidingTab() {
         String[] tabContents = getResources().getStringArray(R.array.MuscleSections);
-        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents);
+        TypedArray muscles = getResources().obtainTypedArray(R.array.muscles);
+        TypedArray musclesInfos = getResources().obtainTypedArray(R.array.musclesInfos);
+
+        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents,muscles,musclesInfos);
 
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);

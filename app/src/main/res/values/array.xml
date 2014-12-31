@@ -114,7 +114,42 @@
         <item>輔助動作3</item>
         <item>輔助動作4</item>
         <item>輔助動作5</item>
-        <item>輔助動作6</item>
+    </string-array>
+
+    <string-array name="auxiliary_types">
+        <item>@array/auxiliary_types_1</item>
+        <item>@array/auxiliary_types_2</item>
+        <item>@array/auxiliary_types_3</item>
+        <item>@array/auxiliary_types_4</item>
+        <item>@array/auxiliary_types_5</item>
+    </string-array>
+    <string-array name="auxiliary_types_infos">
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+    </string-array>
+
+    <string-array name="auxiliary_types_1">
+        <item>@drawable/auxiliary_type1_1</item>
+        <item>@drawable/auxiliary_type1_2</item>
+    </string-array>
+    <string-array name="auxiliary_types_2">
+        <item>@drawable/auxiliary_type2_1</item>
+        <item>@drawable/auxiliary_type2_2</item>
+    </string-array>
+    <string-array name="auxiliary_types_3">
+        <item>@drawable/auxiliary_type3_1</item>
+        <item>@drawable/auxiliary_type3_2</item>
+    </string-array>
+    <string-array name="auxiliary_types_4">
+        <item>@drawable/pullup_type1_1</item>
+        <item>@drawable/pullup_type1_2</item>
+    </string-array>
+    <string-array name="auxiliary_types_5">
+        <item>@drawable/pullup_type2_1</item>
+        <item>@drawable/pullup_type2_2</item>
     </string-array>
 
     <string-array name="MuscleSections">
@@ -122,6 +157,33 @@
         <item>肌肉2</item>
         <item>肌肉3</item>
         <item>肌肉4</item>
+    </string-array>
+
+    <string-array name="muscles">
+        <item>@array/muscles_1</item>
+        <item>@array/miscles_2</item>
+        <item>@array/miscles_3</item>
+        <item>@array/miscles_4</item>
+    </string-array>
+
+    <string-array name="musclesInfos">
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+        <item>@string/pullups_type_1</item>
+    </string-array>
+
+    <string-array name="muscles_1">
+        <item>@drawable/muscle_1</item>
+    </string-array>
+    <string-array name="miscles_2">
+        <item>@drawable/muscle_2</item>
+    </string-array>
+    <string-array name="miscles_3">
+        <item>@drawable/muscle_3</item>
+    </string-array>
+    <string-array name="miscles_4">
+        <item>@drawable/muscle_4</item>
     </string-array>
 
     <string-array name="TraingSections">

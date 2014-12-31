@@ -1,5 +1,6 @@
 package com.kosbrother.pullups.pic_activities.auxiliary;
 
+import android.content.res.TypedArray;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -33,7 +34,10 @@ public class AuxiliaryMovementsActivity extends ActionBarActivity {
 
     private void setViewPagerAndSlidingTab() {
         String[] tabContents = getResources().getStringArray(R.array.AuxiliarySections);
-        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents);
+        TypedArray types = getResources().obtainTypedArray(R.array.auxiliary_types);
+        TypedArray typesInfo = getResources().obtainTypedArray(R.array.auxiliary_types_infos);
+
+        PicPagerAdapter adapter = new PicPagerAdapter(getSupportFragmentManager(),tabContents,types,typesInfo);
 
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);
